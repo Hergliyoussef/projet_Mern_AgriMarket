@@ -27,9 +27,8 @@ const OrderRoutes = require('./routes/OrderRoute');
 app.use('/api/orders', OrderRoutes);
 const categoryRoutes = require('./routes/CategoryRoute');
 app.use('/api/categories', categoryRoutes);
-const ProfileRoute = require('./routes/ProfileRoute'); 
-app.use('/api/profiles', ProfileRoute);                
-
+const reviewRoutes = require('./routes/ReviewRoute');
+app.use('/api/reviews', reviewRoutes);
 // 4. Lancement du serveur
 app.listen(port, () => {
   console.log(`Serveur AgriMarket démarré sur http://localhost:${port}`);
